@@ -23,7 +23,7 @@ const ListingPage = () => {
 
   const fetchDoctors = async () => {
     setLoading(true);
-    const response = await listDoctors({
+    const response: any = await listDoctors({
       page: currentPage,
       limit: 10,
     });
